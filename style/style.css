@@ -1,0 +1,138 @@
+@font-face{
+    font-family: anirm;
+    src: url(fonts/anirm.ttf);
+}
+
+@font-face{
+    font-family: ringm;
+    src : url(fonts/ringm.ttf);
+}
+
+body {
+	
+    margin: 0;
+    height: 100vh;
+    align-items: center;
+    background-image: url("background1.jpg");
+    background-size: cover;
+    background-repeat : no-repeat;
+    background-attachment: fixed;
+
+}
+
+h1{
+    text-align: center;
+    color: #471712;
+    align-items: initial;
+    font-family: ringm;
+    letter-spacing: 3px;
+    font-size: 40px;
+    padding-top: 4px;
+}
+
+
+h2{
+    text-align: center;
+    color: black;
+    align-items: initial;
+    font-family: anirm;
+    letter-spacing: 3px;
+}
+
+
+nav ul {
+	list-style-type: none;
+    padding: 0;
+    
+}
+
+nav ul li {
+    
+	display: flex;
+	font-size: 35px;
+    font-family: anirm;
+	width: 6em;
+	height: 1.5em;
+	line-height: 1.5em;
+	position: relative;
+	overflow: hidden;
+	margin: 0.5em;
+    cursor: pointer;
+    text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black;
+}
+
+nav ul li span {
+	color: white;
+	mix-blend-mode: luminosity;
+}
+
+nav ul li::before {
+	content: '';
+	position: absolute;
+	width: 1.5em;
+	height: inherit;
+	background-color: #471712;
+	border-radius: 50%;
+	top: 0;
+	left: -0.75em;
+	transition: 0.5s ease-out;
+}
+
+nav ul li:hover::before {
+	transform: scale(10);
+}
+
+#back-button{
+    background-color: #250404;
+    color: white;
+    display: none;
+	font-size: 20px;
+    font-family: anirm;
+	width: 6em;
+    line-height: 1.5em;
+}
+
+
+#footer{
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+#newgame, #container1 ,#fight{
+    display: none;
+}
+
+
+.synopsis{
+    text-align: justify;
+}
+
+.box{
+    background-color: rgb(255, 255, 255, 0.7);
+    padding: 100px;
+    border-style: solid;
+    margin: 50px;
+    text-align: center;
+}
+
+.racestyle{
+    display: none;
+    color: #471712;
+    align-items: initial;
+    font-family: anirm;
+    font-size: 20px;
+}
+.usernamebox{
+    color: #471712;
+    font-family: anirm;
+    font-size: 20px;
+}
+
+.usernametitle{
+    color: #471712;
+    font-family: anirm;
+    font-size: 12px;
+}

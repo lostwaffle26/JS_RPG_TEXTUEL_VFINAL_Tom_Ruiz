@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="style/style.css" rel="stylesheet">
+  <script defer src="js/main.js"></script>
+  <title>Text Adventure</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div id="header">
+        <h1>Le Seigneur des Zanos - Le jeu</h1>
+        <div id="racechoice">
+        <span class="racestyle" id="hobbitspan">Vous avez choisi la classe Hobbit</span>
+        <span class="racestyle" id="elferace">Vous avez choisi la classe Elfe</span>
+        <span class="racestyle" id="trollrace">Vous avez choisi la classe Troll</span>
+        <span class="racestyle" id="orcrace">Vous avez choisi la classe Orque</span>
+        <span class="usernametitle" id="username"></span>
+    </div>
+    </div>
+    
+    <div id="menu">
+        <nav>
+            <ul>
+                <li onclick="play()" id="play-button"><span>Jouer</span></li>
+                <li onclick="settings()"id="settings-button"><span>Options</span></li>
+                <li onclick="infos()" id="info-button"><span>Infos</span></li>
+             </ul>
+        </nav>
+    </div>
+    
+    <div class="box" id="newgame">
+            
+            <div>Choisir votre race</div>
+            <div class="btn-grid">
+                <button onclick="race('hobbitspan')" id="btnhobbit" type="button" class="btn btn-success">Hobbit</button>
+                <button onclick="race('elferace')" id="btnelfe" type="button" class="btn btn-success">Elfe</button>
+                <button onclick="race('trollrace')" id="btntroll" type="button" class="btn btn-danger">Troll</button>
+                <button onclick="race('orcrace')" id="btnorque" type="button" class="btn btn-danger">Orque</button>   
+            </div>
+    
+    </div>
+    
+    <div class="box" id="container1">
+            
+        <h2>Bienvenue dans la Terre du Centre <span id="username1"></span>!</h2>
+    
+        <div class="synopsis">Vous voici prêt à partir à l’aventure ! 
+            Depuis des années la rumeur se répand que l’élu a été choisit... 
+            Mais qui est-il ?
+            Et pourquoi toutes les personnes de votre entourage semblent-t-elles vous porter un intérêt particulier ? 
+            Bien décidé à découvrir ce qu’il se trame, vous décidez de partir à l'aventure,
+            Vous traverserez des contrées lointaines et ferez bien des rencontres surprenantes...
+        </div>
+       
+        <button onclick="combatphase()" type="button" class="btn btn-secondary">Suivant</button>
+    </div>
+
+
+  <div class="box" id="fight">
+    <div id="text">Text</div>
+    <div id="option-buttons">
+      <button type="button" class="btn btn-secondary">Option 1</button>
+      <button type="button" class="btn btn-secondary">Option 2</button>
+      <button type="button" class="btn btn-secondary">Option 3</button>
+      <button type="button" class="btn btn-secondary">Option 4</button>
+    </div>
+  </div>
+
+
+<div id="footer">
+<button onclick ="back()" id="back-button">Retour Menu</button>
+</div>
+
+
+</body>
+</html>
